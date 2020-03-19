@@ -1,0 +1,7 @@
+ Jazz Jackrabbit is a platform game developed and published by Epic 
+ MegaGames. It was released in 1994 for PCs operating DOS, with
+ subsequent Macintosh and Microsoft Windows releases in 1995 and 1996.
+ It was one of the first games to bring the side-scrolling platformer
+ style—common on gaming consoles—to a PC audience. On November 30,
+ 2017 the game was re-released on GOG.com along with Jazz Jackrabbit 2,
+ with support for Windows, macOS, and Linux. 
