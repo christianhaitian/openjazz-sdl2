@@ -4,7 +4,7 @@ include openjazz.mk
 # Sane defaults
 CXX ?= arm-linux-gnueabihf-g++-6
 CXXFLAGS ?= -g -Wall -O3 -marm -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard
-CPPFLAGS = -Isrc -DSCALE -Iext/scale2x -Iext/psmplug -Iext/miniz -DHOMEDIR
+CPPFLAGS = -Isrc -DSCALE -Iext/scale2x -Iext/psmplug -Iext/miniz -DHOMEDIR -DFULLSCREEN_ONLY
 
 # Network support
 CXXFLAGS += -DUSE_SOCKETS
