@@ -1,7 +1,6 @@
 *.o
 openjazz
 OpenJazz
-openjazz.cfg
 *.exe
 *.a
 
