@@ -1,6 +1,4 @@
 *.o
-openjazz
-OpenJazz
 *.exe
 *.a
 
@@ -34,11 +32,3 @@ aclocal.m4
 config.log
 config.status
 configure
-
-# distribution
-openjazz-*.tar.*
-OpenJazz-*.zip
-
-# generated documentation
-/doc/html
-/unix/OpenJazz.6
