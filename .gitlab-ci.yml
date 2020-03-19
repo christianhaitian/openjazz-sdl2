@@ -1,0 +1,19 @@
+image: docker:stable
+
+variables:
+  GIT_SUBMODULE_STRATEGY: normal
+  DOCKER_HOST: tcp://docker:2375/
+  DOCKER_DRIVER: overlay2
+
+stages:
+  - sony-pack-deploy
+
+sony-pack-deploy:
+  stage: sony-pack-deploy
+  image: "registry.gitlab.com/modmyclassic/docker-autodevops-buildenvs/mmc-crosscompiler-docker-image:latest_internal"
+  script:
+    - apt-get update && apt-get install -y libsdl2-dev:armhf
+    - sed -i 's/-j -f/-j 4 -f/g' "/usr/bin/classic_make_psc"
+    - classic_make_psc Makefile.psc
+    - cd classic && make -f Makefile.pack_psc_eris
+    - echo -e "cd /var/www/html/project_eris/mods/\nput *.mod" | sftp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i ~/.keys/release_private_key.pem docker@classicmodscloud.com
