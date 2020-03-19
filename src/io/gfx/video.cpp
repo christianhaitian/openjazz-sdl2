@@ -205,7 +205,7 @@ redMask   = 0x000000ff;
 greenMask = 0x0000ff00;
 blueMask  = 0x00ff0000;
 
-window = SDL_CreateWindow("", 0, 0, 800, 600, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
+window = SDL_CreateWindow("", 0, 0, 1280, 720, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
 renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC); 
 
 // The buffer where the game puts each frame into.
