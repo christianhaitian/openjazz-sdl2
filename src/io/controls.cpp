@@ -235,13 +235,13 @@ Controls::Controls () {
 
 
 	axes[C_UP].axis = 1;
-	axes[C_UP].direction = false;
+	axes[C_UP].direction = true;
 	axes[C_DOWN].axis = 1;
-	axes[C_DOWN].direction = true;
+	axes[C_DOWN].direction = false;
 	axes[C_LEFT].axis = 0;
-	axes[C_LEFT].direction = false;
+	axes[C_LEFT].direction = true;
 	axes[C_RIGHT].axis = 0;
-	axes[C_RIGHT].direction = true;
+	axes[C_RIGHT].direction = false;
 	axes[C_JUMP].axis = -1;
 	axes[C_SWIM].axis = -1;
 	axes[C_FIRE].axis = -1;
